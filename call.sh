@@ -24,7 +24,7 @@ if [ $confirm = "y" ]; then
 echo Melakukan spam call ke nomor $target
 target_do='http://zpro.000webhostapp.com/api/call.php?nomor='$target
 CURL_RESPONSE=`curl -s -o /dev/null -w "%{http_code}" $target_do`
-#echo $target_do
+echo $target_do
 else
 echo Kesalahan, silahkan coba lagi
 fi
